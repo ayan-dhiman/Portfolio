@@ -1,0 +1,102 @@
+@import '../../Global.scss';
+
+.work {
+  height: calc(100vh - 70px);
+  color: $fontColor;
+  padding: 0 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .text {
+    margin: 8px 0px;
+  }
+
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .projectContainer{
+    width: 100%;
+
+    .projectCard{
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+
+      .headingProject{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .headingProjectImage{
+
+          width: 70px;
+          height: 70px;
+
+        }
+      }
+
+      .dashImage{
+        width: 60%;
+        img{
+          width: 95%;
+          border-radius: 10px;
+          border: 2px $secondaryColor solid;
+        }
+      }
+
+      .pCardInfo{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h4{
+          font-weight: 400;
+        }
+
+        .techUsed{
+          display: flex;
+          gap: 25px;
+        }
+
+        .projectLinks{
+          display: flex;
+          gap: 25px;
+
+          a{
+            text-decoration: none;
+            color: $fontColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .colorBar {
+    background-color: $secondaryColor;
+    height: 60px;
+    width: 10px;
+    margin-right: 10px;
+  }
+
+  .heading {
+    display: flex;
+    align-items: center;
+  }
+
+}

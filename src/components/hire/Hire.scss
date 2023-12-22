@@ -1,0 +1,85 @@
+@import '../../Global.scss';
+
+.hire{
+    
+    height: calc(100vh - 70px);
+    color: $fontColor;
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .hire_services{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+
+    }
+
+    .service_hire{
+
+        border: 2px $fontColor solid;
+        background-color: transparent;
+        color: $fontColor;
+        padding: 15px 70px;
+        font-size: large;
+        font-weight: 700;
+        margin: 20px 30px;
+        width: 270px;
+
+        &.selected {
+            background-color: $secondaryColor;
+            border-color: $secondaryColor;
+            color: $buttonFontColor;
+            font-size: medium;
+            transition: background-color 0.1s ease-in-out;
+          }
+
+    }
+
+    .input_Info{
+
+        .input {
+            background-color: transparent;
+            color: $fontColor;
+            border: none; 
+            font-size: larger;
+            border-bottom: 3px solid $fontColor;
+            ::placeholder {
+                color: $fontColor;
+            }
+            padding: 15px 20px;
+            margin: 20px 20px 40px;
+            width: 300px;
+        }
+
+    }
+
+    .hireButton {
+        color: $buttonFontColor;
+        border: none;
+        font-weight: 700;
+        width: 300px;
+        height: 60px;
+        background-color: $secondaryColor;
+        margin: 20px 0 0 0;
+        transition: opacity 0.3s ease, border 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        font-size: large;
+    
+        &:hover {
+            opacity: 70%;
+          }
+      
+        &:active {
+        border: 1px solid white;
+        }
+    }
+
+}

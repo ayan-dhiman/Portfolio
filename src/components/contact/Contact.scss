@@ -1,0 +1,68 @@
+@import '../../Global.scss';
+
+.contact {
+    height: calc(100vh - 70px);
+    color: $fontColor;
+    padding: 0 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  
+    .contact-details {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50%;
+      width: 30%;
+      border: 3px $secondaryColor solid;
+  
+      .contact-information {
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  
+        a {
+          color: white;
+          text-decoration: none;
+        }
+  
+        .link1,
+        .link2 {
+          a {
+            color: white;
+            text-decoration: white;
+          }
+  
+          width: 150px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: none;
+
+          transition: opacity 0.3s ease, border 0.3s ease;
+      
+          &:hover {
+              opacity: 70%;
+            }
+        
+          &:active {
+          border: 1px solid white;
+          }
+
+        }
+  
+        .link1 {
+          background-color: #1769ff;
+        }
+  
+        .link2 {
+          background-color: #ea4c89;
+        }
+      }
+    }
+  }
+  

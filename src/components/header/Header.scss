@@ -1,0 +1,60 @@
+@import '../../Global.scss';
+
+.header {
+  color: $fontColor;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+
+  .wrapper {
+    height: 70px;
+    display: flex;
+    padding: 0 20px;
+    justify-content:space-between;
+    font-weight: bold;
+    align-items: center;
+
+    
+
+    // .header_button {
+    //   background-color: $secondaryColor;
+    //   border: none;
+    //   color: $buttonFontColor;
+    //   font-weight: 700;
+    //   width: 100px;
+    //   height: 30px;
+    //   transition: opacity 0.3s ease, border 0.3s ease;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   gap: 5px;
+    
+    //     &:hover {
+    //       opacity: 70%;
+    //     }
+    
+    //     &:active {
+    //       border: 2px solid white;
+    //     }
+
+    //     .hireIcon{
+    //       font-size: small;
+    //     }
+    // }
+
+    // .visible {
+    //   visibility: visible;
+    // }
+
+    // .hidden {
+    //   visibility: hidden;
+    // }
+  }
+
+  a {
+    text-decoration: none;
+    color: $fontColor;
+  }
+}

@@ -1,0 +1,40 @@
+@import '../../Global.scss';
+
+.technologies{
+    height: calc(100vh - 70px);
+    color: $fontColor;
+    padding: 0 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .text{
+        margin: 8px 0px;
+    }
+
+    .colorBar{
+        background-color: $secondaryColor;
+        height: 60px;
+        width: 10px;
+        margin-right: 10px;
+    }
+
+    .heading{
+        display: flex;
+        align-items: center;
+    }
+
+    .logobox{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .logo{
+
+            margin: 20px;
+
+        }
+
+    }
+
+}

@@ -1,0 +1,75 @@
+@import '../../Global.scss';
+
+.services{
+    height: calc(100vh - 70px);
+    color: $fontColor;
+    padding: 0 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1{
+
+        font-weight: 900;
+        font-size: 60px;
+
+    }
+
+    .parent {
+        display: flex;
+        flex-wrap: wrap;
+        width: inherit; /* Adjust the width of the parent container as needed */
+    }
+
+    .child {
+        width: 40% ; /* Adjust the width of the child elements as needed */
+        height: 130px; /* Adjust the height of the child elements as needed */
+        margin: 1%; /* Adjust the margin between child elements as needed */
+        background-color: #7f7f7f11; /* Background color for the child elements */
+        //border: 3px #0f33ff62 solid;
+        border-top: 10px;
+        border-bottom: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-color: $secondaryColor;
+        border-style: solid;
+    }
+
+    .text{
+        margin: 8px 0px;
+    }
+
+    .colorBar{
+        background-color: $secondaryColor;
+        height: 60px;
+        width: 10px;
+        margin-right: 10px;
+    }
+
+    .heading{
+        display: flex;
+        align-items: center;
+    }
+
+    .child{
+        //background-color: rgba(204, 204, 204, 0.0666666667);
+        padding: 10px;
+
+        .serviceName{
+            font-size: normal;
+            font-weight: 500;
+            h3{
+                //background-color: rgba(204, 204, 204, 0.0666666667);
+            }
+        
+        }
+
+        .subtext{
+            p{
+                font-size: 17px;
+                //background-color: rgba(204, 204, 204, 0.0666666667);
+            }
+        }
+    }
+
+}

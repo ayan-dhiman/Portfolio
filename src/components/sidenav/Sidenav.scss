@@ -1,0 +1,42 @@
+@import '../../Global.scss';
+
+.sidenav {
+  color: $fontColor;
+  position: fixed;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+
+  .nav {
+    color: $fontColor;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: inherit;
+
+    .em-dash {
+      color: #0f33ff75;
+    }
+  }
+
+  a{
+
+    text-decoration: none;
+    color: rgb(138, 138, 138);
+    transition: all 0.2s ease-in-out;
+     
+    &:hover{
+      color: $fontColor;
+
+      .em-dash{
+        color: $secondaryColor;
+        transition: all 0.2s ease-in-out;
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,56 @@
+@import 'Global';
+
+:root {
+  --sections-width: 81%; /* Default width for sections */
+}
+
+.App {
+  height: 100vh;
+
+  .page {
+    display: flex;
+    position: relative;
+    top: 70px;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 19%;
+    height: calc(100vh - 70px);
+  }
+
+  .sections {
+    width: var(--sections-width); /* Use the CSS variable */
+    height: calc(100vh - 70px);
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    scroll-snap-type: y mandatory;
+
+    > * {
+      scroll-snap-align: start;
+    }
+
+    .fade-in-out {
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .fade-in-out.active {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .hide-sidebar .sidebar {
+      display: none;
+    }
+
+    .sections {
+      width: 100%; /* Change the width to 100% when the sidebar is not visible */
+    }
+  }
+}
